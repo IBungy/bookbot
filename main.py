@@ -3,7 +3,7 @@ def get_book_text(path_to_file):
         file_contents = f.read()
     return file_contents
 
-from stats import get_num_words
+from stats import word_count
     
 with open("books/frankenstein.txt", 'r') as f:
     book_text = f.read()
