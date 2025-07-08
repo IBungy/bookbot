@@ -12,3 +12,13 @@ def character_count(string):
         else:
             characters[char] = characters[char] + 1
     return characters
+
+def sort_on(item):
+    return item["num"]
+
+def sorted_list(characters):
+    dictionaries = []
+    for char, count in characters.items():
+        dictionaries.append(dict(char=char, num=count))
+    dictionaries.sort(reverse=True, key=sort_on)
+    return dictionaries
